@@ -1,10 +1,11 @@
 import React from 'react'
 import './note.css'
 
-const Note=()=>{
+const Note=(props)=>{
     return(
         <div className='note'>
-            <p>Type Here!</p>
+            <h1>{props.title}</h1>
+            <p>{props.content}</p>
         </div>
     )
 }
